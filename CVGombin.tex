@@ -75,6 +75,7 @@
 
 
 \DeclareBibliographyDriver{article}{%
+\begin{minipage}{\textwidth}
  \printfield{year}%
  \href{\thefield{url}}{\printfield{title}}%
  \newblock%
@@ -88,9 +89,11 @@
     \printfield{pages}%
     }
   \par\vspace{0.3\baselineskip}
+\end{minipage}
 }
 
 \DeclareBibliographyDriver{book}{%
+\begin{minipage}{\textwidth}
  \printfield{year}%
  \href{\thefield{url}}{\printfield{title}}%  
  \newblock%
@@ -106,9 +109,11 @@
     \printlist{location}%
     }
   \par\vspace{0.3\baselineskip}
+\end{minipage}
 }
 
 \DeclareBibliographyDriver{incollection}{%
+\begin{minipage}{\textwidth}
   \printfield{year}%
  \href{\thefield{url}}{\printfield{title}}%
   \newblock%
@@ -126,9 +131,11 @@
     \printfield{pages}%    
     }
   \par\vspace{0.3\baselineskip}
+\end{minipage}
 }
 
 \DeclareBibliographyDriver{inproceedings}{%
+\begin{minipage}{\textwidth}
   \printfield{year}%
  \href{\thefield{url}}{\printfield{title}}%
   \newblock%
@@ -143,9 +150,11 @@
     \newunit%
   }
   \par\vspace{0.3\baselineskip}
+\end{minipage}
 }
 
 \DeclareBibliographyDriver{misc}{%
+\begin{minipage}{\textwidth}
   \printfield{year}%
  \href{\thefield{url}}{\printfield{title}}%  
  \newblock%
@@ -164,9 +173,11 @@
     \newunit%
   }
   \par\vspace{0.3\baselineskip}
+\end{minipage}
 }
 
 \DeclareBibliographyDriver{report}{%
+\begin{minipage}{\textwidth}
    \printfield{year}%
  \href{\thefield{url}}{\printfield{title}}%
    \newblock%
@@ -185,9 +196,11 @@
     \newunit%
   }
   \par\vspace{0.3\baselineskip}
+\end{minipage}
 }
 
 \DeclareBibliographyDriver{thesis}{%
+\begin{minipage}{\textwidth}
    \printfield{year}%
  \href{\thefield{url}}{\printfield{title}}%
    \newblock%
@@ -204,6 +217,7 @@
     \newunit%
   }
   \par\vspace{0.3\baselineskip}
+\end{minipage}
 }
 
 
@@ -224,8 +238,8 @@
 
 
 \DeclareSortingScheme{chronological}{
-  \sort[direction=descending]{\field{year}}
-  \sort[direction=descending]{\field{month}}
+  \sort[direction=ascending]{\field{year}}
+  \sort[direction=ascending]{\field{month}}
 }
 
 
