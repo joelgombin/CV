@@ -91,6 +91,10 @@
     \footnotesize\addfontfeature{Color=darkgray}\itshape%
     \usebibmacro{journal}%
     \setunit{\space}%
+    \printfield{volume}%
+    \setunit{\space}%    
+    \emph{\printfield{number}}%
+    \setunit{\space}%
     \printfield{pages}%
     }
   \par\vspace{0.3\baselineskip}
@@ -242,13 +246,20 @@
     {}%
 }
 
-\newcommand{\printbibsection}[2]{
+
+\newcommand{\printbibsection}[3]{
+  \begin{refsection}
+    \nocite{*}
+    \printbibliography[sorting=chronological, type={#1}, keyword={#2}, title={#3}, heading=subbibliography]
+  \end{refsection}
+}
+
+\newcommand{\printbibsectionNK}[2]{
   \begin{refsection}
     \nocite{*}
     \printbibliography[sorting=chronological, type={#1}, title={#2}, heading=subbibliography]
   \end{refsection}
 }
-
 
 \DeclareSortingScheme{chronological}{
   \sort[direction=ascending]{\field{year}}
@@ -302,18 +313,16 @@ Licence de droit, Université Paul-Cézanne. Mention Assez bien\\
 \years{2005-2013}Thèse en cours sur le sujet : « Configurations locales et construction sociale des électorats. Etude comparative des votes FN en région PACA », \textsc{Iep} d'Aix-en-Provence puis Université de Picardie-Jules Verne.
 
 %\hrule
-%\section*{Grants, honors \& awards}
-%\noindent
-%\years{1921}Nobel Prize in Physics, Nobel Foundation
-
 \section*{Publications}
 
- \printbibsection{article}{Articles}
- \printbibsection{book}{Direction d'ouvrage}
- \printbibsection{incollection}{Chapitres d'ouvrage} 
-\printbibsection{inproceedings}{Communications}
-\printbibsection{report}{Rapport de recherche}
-\printbibsection{thesis}{Travaux universitaires}
+ \printbibsection{article}{comité de lecture}{Articles publiés dans des revues à comité de lecture}
+ \printbibsection{article}{sans comité de lecture}{Articles publiés dans des revues sans comité de lecture}
+ \printbibsectionNK{book}{Direction d'ouvrage}
+ \printbibsectionNK{incollection}{Chapitres d'ouvrage} 
+ \printbibsectionNK{inproceedings}{Communications}
+ \printbibsectionNK{report}{Rapport de recherche}
+ \printbibsection{article}{recension}{Recensions d'ouvrage}
+ \printbibsectionNK{thesis}{Travaux universitaires}
 
 \section*{Enseignements}
 
