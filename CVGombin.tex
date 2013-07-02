@@ -67,7 +67,7 @@
 \hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
 
 % BIBLIOGRAPHY
-\RequirePackage[style=verbose, maxnames=99, sorting=ydnt, backend=biber]{biblatex}
+\RequirePackage[style=verbose, maxnames=99, sorting=ynt, backend=biber]{biblatex}
 \addbibresource{publis.bib}
 \DeclareFieldFormat[article]{title}{#1\par}
 \DeclareFieldFormat[book]{title}{#1\par}
@@ -262,8 +262,8 @@
 }
 
 \DeclareSortingScheme{chronological}{
-  \sort[direction=ascending]{\field{year}}
-  \sort[direction=ascending]{\field{month}}
+  \sort[direction=descending]{\field{year}}
+  \sort[direction=descending]{\field{month}}
 }
 
 \urlstyle{same}
@@ -283,10 +283,15 @@ BP 2716\\
 France\\[.2cm]
 Téléphone: +33~6~61~55~22~41\\
 E-mail: \href{mailto:joel.gombin@u-picardie.fr}{joel.gombin@u-picardie.fr}\\
-\textsc{url}: \href{http://www.joelgombin.fr}{\url{http://www.joelgombin.fr}}\\ 
-\vfill
+\textsc{url}: \href{http://www.joelgombin.fr}{\url{http://www.joelgombin.fr}}\\[.2cm]
 Né le 15 janvier 1983 à Paris 17\textsuperscript{e}, France\\
 Nationalité : française
+
+\vfill
+
+%%\hrule
+\section*{Thèmes de recherche}
+Sociologie électorale -- Front national -- Mondes agricoles -- Conspirationnisme
 
 %%\hrule
 \section*{Situation actuelle}
@@ -301,18 +306,19 @@ Direction : Patrick Lehingue (PR, \textsc{Upjv}) et Christophe Traïni (PR, \tex
 %%\hrule
 \section*{Postes occupés}
 \noindent
-\years{2005-2008}Allocataire de recherche, \textsc{Cspc} -- Institut d'études politiques, Aix-en-Provence\\
-\years{2008-2010}Attaché temporaire d'enseignement et de recherche (\textsc{Ater}) en science politique, Faculté de droit et de science politique, Université de Picardie Jules Verne.\\
 \years{2011-2011}Chef de projet, association Voiture \& co, Paris\\
+\years{2008-2010}Attaché temporaire d'enseignement et de recherche (\textsc{Ater}) en science politique, Faculté de droit et de science politique, Université de Picardie Jules Verne.\\
+\years{2005-2008}Allocataire de recherche, \textsc{Cspc} -- Institut d'études politiques, Aix-en-Provence\\
 
 %\hrule
 \section*{Formation}
 \noindent
-\years{2000}Baccalauréat, série \textsc{es}, mention \textsc{tb} avec les Félicitations du jury\\
+\years{2005-2013}Thèse en cours sur le sujet : « Configurations locales et construction sociale des électorats. Etude comparative des votes FN en région PACA », \textsc{Iep} d'Aix-en-Provence puis Université de Picardie-Jules Verne.
+\years{2005}Master de politique comparée, mention \enquote{Europe méditerranéenne}, \textsc{Iep} d'Aix-en-Provence. \\
 \years{2004}Diplôme de l'\textsc{Iep} d'Aix-en-Provence, section \enquote{science politique}. Mention Bien\\
 Licence de droit, Université Paul-Cézanne. Mention Assez bien\\
-\years{2005}Master de politique comparée, mention \enquote{Europe méditerranéenne}, \textsc{Iep} d'Aix-en-Provence. \\
-\years{2005-2013}Thèse en cours sur le sujet : « Configurations locales et construction sociale des électorats. Etude comparative des votes FN en région PACA », \textsc{Iep} d'Aix-en-Provence puis Université de Picardie-Jules Verne.
+\years{2000}Baccalauréat, série \textsc{es}, mention \textsc{tb} avec les Félicitations du jury\\
+
 
 %\hrule
 \section*{Publications}
@@ -328,33 +334,12 @@ Licence de droit, Université Paul-Cézanne. Mention Assez bien\\
 
 \section*{Enseignements}
 
-\begin{minipage}{\linewidth}
-\years{2004-}\textbf{Prépa \textsc{Iep} Ambition Réussite}\\
-Enseignant\\
-\emph{Histoire contemporaine, méthodologie, actualité, ouvrage, culture générale}
-\end{minipage}
 
 \begin{minipage}{\linewidth}
-\years{2006-2007}\textbf{Université Lyon-\textsc{ii}}\\
+\years{2010-2011}\textbf{Université Paris-\textsc{i} Panthéon Sorbonne}\\
 Chargé d'enseignement\\
-Licence 3 de science politique\\
-\emph{Travaux dirigés \enquote{Processus de décision publique}}
-\end{minipage}
-
-\begin{minipage}{\linewidth}
-\years{2007-2008}\textbf{Institut régional du Travail social, Neuilly-sur-Marne}\\
-Chargé d'enseignement\\
-Licence 2 d'administration économique et sociale -- formation d'assistant social\\
-\emph{Travaux dirigés \enquote{Politique sociale}}
-\end{minipage}
-
-\begin{minipage}{\linewidth}
-\years{2007-2009}\textbf{Université Paris-\textsc{xiii}}\\
-Chargé d'enseignement\\
-Licence 1 de sociologie politique\\
-\emph{Travaux dirigés \enquote{Droit et institutions publiques}}\\
-Licence 3 de sociologie politique\\
-\emph{Travaux dirigés \enquote{Sociologie de l'État}}
+Licence 1 de droit\\
+\emph{Travaux dirigés \enquote{Introduction à la science politique}}\\
 \end{minipage}
 
 \begin{minipage}{\linewidth}
@@ -371,34 +356,57 @@ Master 1 de science politique\\
 \end{minipage}
 
 \begin{minipage}{\linewidth}
-\years{2010-2011}\textbf{Université Paris-\textsc{i} Panthéon Sorbonne}\\
+\years{2007-2009}\textbf{Université Paris-\textsc{xiii}}\\
 Chargé d'enseignement\\
-Licence 1 de droit\\
-\emph{Travaux dirigés \enquote{Introduction à la science politique}}\\
+Licence 1 de sociologie politique\\
+\emph{Travaux dirigés \enquote{Droit et institutions publiques}}\\
+Licence 3 de sociologie politique\\
+\emph{Travaux dirigés \enquote{Sociologie de l'État}}
 \end{minipage}
+
+\begin{minipage}{\linewidth}
+\years{2007-2008}\textbf{Institut régional du Travail social, Neuilly-sur-Marne}\\
+Chargé d'enseignement\\
+Licence 2 d'administration économique et sociale -- formation d'assistant social\\
+\emph{Travaux dirigés \enquote{Politique sociale}}
+\end{minipage}
+
+\begin{minipage}{\linewidth}
+\years{2006-2007}\textbf{Université Lyon-\textsc{ii}}\\
+Chargé d'enseignement\\
+Licence 3 de science politique\\
+\emph{Travaux dirigés \enquote{Processus de décision publique}}
+\end{minipage}
+
+\begin{minipage}{\linewidth}
+\years{2004-}\textbf{Prépa \textsc{Iep} Ambition Réussite}\\
+Enseignant\\
+\emph{Histoire contemporaine, méthodologie, actualité, ouvrage, culture générale}
+\end{minipage}
+
 
 
 %\hrule
 \section*{Animation de la recherche et recherches collectives}
-\years{2006-2007}Coordination au sein du CSPC du groupe de recherche \enquote{Elections 2007} et animation d’unséminaire méthodologique \enquote{Etudes électorales : méthodes, théories, données} \\
-\years{2006-2008}Participation au projet de recherche subventionné par l'\textsc{anr} \enquote{Pour une analyse écologique des comportements électoraux (\textsc{paece})}, dirigé par le Pr Jean-Yves Dormagen (coordination d'un terrain marseillais) \\
-\years{2009}Organisation de la journée d'étude \enquote{L'importance du niveau \enquote{méso} dans l'étude du succès de l'extrême droite},  \textsc{Upjv-Curapp}-Université d'Anvers, Amiens \\
-\years{2011}Organisation, avec Jean Rivière, de la section thématique 34 \enquote{Géographie et sociologie électorales : duel ou duo ? Actualité et avenir d'une concurrence/collaboration scientifique} au Congrès de l'Association française de science politique, Strasbourg\\
 \years{2011-}Participation au projet de recherche \enquote{Sociologie politique de l'élection} (SPEL), dirigé par Daniel Gaxie et Patrick Lehingue
+\years{2011}Organisation, avec Jean Rivière, de la section thématique 34 \enquote{Géographie et sociologie électorales : duel ou duo ? Actualité et avenir d'une concurrence/collaboration scientifique} au Congrès de l'Association française de science politique, Strasbourg\\
+\years{2009}Organisation de la journée d'étude \enquote{L'importance du niveau \enquote{méso} dans l'étude du succès de l'extrême droite},  \textsc{Upjv-Curapp}-Université d'Anvers, Amiens \\
+\years{2006-2008}Participation au projet de recherche subventionné par l'\textsc{anr} \enquote{Pour une analyse écologique des comportements électoraux (\textsc{paece})}, dirigé par le Pr Jean-Yves Dormagen (coordination d'un terrain marseillais) \\
+\years{2006-2007}Coordination au sein du CSPC du groupe de recherche \enquote{Elections 2007} et animation d’unséminaire méthodologique \enquote{Etudes électorales : méthodes, théories, données} \\
 
 %hrule
 \section*{Valorisation de la recherche}
-Interventions dans de nombreux médias régionaux et nationaux à l'occasion des échéances électorales, sur le vote FN et le vote des agriculteurs\\
+Interventions régulières dans de nombreux médias régionaux et nationaux, sur le vote FN et le vote des agriculteurs\\
 Diverses conférences \\
 
 %hrule
 \section*{Engagements professionnels et associatifs}
 \begin{minipage}{\linewidth}\years{2004}Vice-président étudiant du Conseil d'administration de l'\textsc{Iep} d'Aix-en-Provence\end{minipage}\\
-\years{2005-2008}Membre actif, puis secrétaire général, de la Confédération des jeunes chercheurs\\
-\years{2006-2008}Vice-président, puis président, de l'Association nationale des candidats aux métiers de la science politique (\textsc{ancmsp})\\
-\years{2006-2008}Rédacteur et membre du comité de direction du \emph{Mensuel de l'Université}\\
-\years{2008-2010}Président de l'association \emph{Les nouvelles Éditions universitaires}, éditrice du \emph{Mensuel de l'Université} et de \url{www.universitemag.fr}\\
 \years{2012-}Création, avec Maïeul Rouquette, d'une association \enquote{\LaTeX\ en sciences humaines et sociales}
+\years{2008-2010}Président de l'association \emph{Les nouvelles Éditions universitaires}, éditrice du \emph{Mensuel de l'Université} et de \url{www.universitemag.fr}\\
+\years{2006-2008}Rédacteur et membre du comité de direction du \emph{Mensuel de l'Université}\\
+\years{2006-2008}Vice-président, puis président, de l'Association nationale des candidats aux métiers de la science politique (\textsc{ancmsp})\\
+\years{2005-2008}Membre actif, puis secrétaire général, de la Confédération des jeunes chercheurs\\
 
 
 %\vspace{1cm}
