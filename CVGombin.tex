@@ -90,11 +90,11 @@
   {%
     \footnotesize\addfontfeature{Color=darkgray}\itshape%
     \usebibmacro{journal}%
-    \setunit{\space}%
+    \setunit{, \space}%
     \printfield{volume}%
-    \setunit{\space}%    
+    \setunit{, \space}%    
     \emph{\printfield{number}}%
-    \setunit{\space}%
+    \setunit{, \space}%
     \printfield{pages}%
     }
   \par\vspace{0.3\baselineskip}
@@ -111,11 +111,11 @@
   \newblock%
   {%
     \footnotesize\addfontfeature{Color=darkgray}\itshape%
-    \printfield{series}%
+    % \printfield{series}%
+    % \setunit{, \space}%
+    \printlist{location}%
     \setunit{,\space}%
     \printlist{publisher}%
-    \setunit{\space}%
-    \printlist{location}%
     }
   \par\vspace{0.3\baselineskip}
 \end{minipage}
@@ -132,11 +132,11 @@
   {%
     \footnotesize\addfontfeature{Color=darkgray}\itshape%
     \printnames{editor}%
-    \setunit{ (dir.)\space}%
+    \setunit{ (dir.),\space}%
     \usebibmacro{booktitle}%
-    \setunit{\space}%
+    \setunit{,\space}%
     \printlist{location}%
-    \setunit{\space}%
+    \setunit{,\space}%
     \printfield{pages}%    
     }
   \par\vspace{0.3\baselineskip}
@@ -292,11 +292,11 @@ Nationalité : française
 
 %%\hrule
 \section*{Thèmes de recherche}
-Sociologie électorale -- Front national -- Mondes agricoles -- Conspirationnisme
+Sociologie électorale -- Géographie électorale -- Front national -- Mondes agricoles -- Conspirationnisme -- Inégalités -- Méthodes quantitatives
 
 %%\hrule
 \section*{Situation actuelle}
-\years{2011-2014} Doctorant en science politique, \textsc{curapp}, Université de Picardie-Jules Verne.
+\years{2011-2015} Doctorant en science politique, \textsc{curapp}, Université de Picardie-Jules Verne.
 
 Direction : Patrick Lehingue (PR, \textsc{Upjv}) et Christophe Traïni (PR, \textsc{Iep} Aix).
 
@@ -314,11 +314,15 @@ Direction : Patrick Lehingue (PR, \textsc{Upjv}) et Christophe Traïni (PR, \tex
 %\hrule
 \section*{Formation}
 \noindent
-\years{2005-2014}Thèse en cours sur le sujet : « Configurations locales et construction sociale des électorats. Etude comparative des votes FN en région PACA », \textsc{Iep} d'Aix-en-Provence puis Université de Picardie-Jules Verne.
+\years{2005-2015}Thèse en cours sur le sujet : \enquote{Éléments pour une sociologie configurationnelle des votes. Les opportunités d’une analyse multiniveau des votes pour le Front
+national}, \textsc{Iep} d'Aix-en-Provence puis Université de Picardie-Jules Verne.
+
 \years{2005}Master de politique comparée, mention \enquote{Europe méditerranéenne}, \textsc{Iep} d'Aix-en-Provence. \\
 \years{2004}Diplôme de l'\textsc{Iep} d'Aix-en-Provence, section \enquote{science politique}. Mention Bien\\
 Licence de droit, Université Paul-Cézanne. Mention Assez bien\\
 \years{2000}Baccalauréat, série \textsc{es}, mention \textsc{tb} avec les Félicitations du jury\\
+
+
 
 
 %\hrule
@@ -327,10 +331,12 @@ Licence de droit, Université Paul-Cézanne. Mention Assez bien\\
  \printbibsection{article}{comité de lecture}{Articles publiés dans des revues à comité de lecture}
  \printbibsection{article}{sans comité de lecture}{Articles publiés dans des revues sans comité de lecture}
  \printbibsection{article}{direction}{Direction de dossier de revue}
- \printbibsectionNK{book}{Direction d'ouvrage}
+ \printbibsection{book}{direction}{Direction d'ouvrage}
+ \printbibsection{book}{livre}{Livres}
+ \printbibsection{book}{manuel}{Manuels}
  \printbibsectionNK{incollection}{Chapitres d'ouvrage} 
  \printbibsectionNK{inproceedings}{Communications}
- \printbibsectionNK{report}{Rapport de recherche}
+ \printbibsectionNK{report}{Rapports et notes de recherche, littérature grise}
  \printbibsection{article}{recension}{Recensions d'ouvrage}
  \printbibsectionNK{thesis}{Travaux universitaires}
 
